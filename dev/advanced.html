@@ -237,7 +237,7 @@ logging level:</p>
 </div>
 <p>Most of the events from Pooch are logged at the info level; this code says that
 you only care about warnings or errors, like inability to create the data
-cache. The event logger is a <a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Logger</span></code></a> object, so you can use
+cache. The event logger is a <a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Logger</span></code></a> object, so you can use
 that class’s methods to handle logging events in more sophisticated ways if you
 wish.</p>
 </div>
@@ -340,7 +340,7 @@ after downloading each data file through <a class="reference internal" href="api
         <span class="p">)</span>
         <span class="c1"># Add the name, hash, and url of the file to the new registry file</span>
         <span class="n">registry</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
-            <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">pooch</span><span class="o">.</span><span class="n">file_hash</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">url</span><span class="p">)</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">pooch</span><span class="o">.</span><span class="n">file_hash</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
         <span class="p">)</span>
 </pre></div>
 </div>
@@ -376,7 +376,7 @@ and over a secure connection. If you have access to file hashes/checksums,
     <p>
         &copy; Copyright 2018-2020, The Pooch Developers
       <span class="lastupdated">
-        Last updated on Sep 10, 2020.
+        Last updated on Oct 15, 2020.
       </span>
 
     </p>
