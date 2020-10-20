@@ -150,6 +150,7 @@ Projects using Pooch
 * `RockHound <https://github.com/fatiando/rockhound>`__
 * `icepack <https://github.com/icepack/icepack>`__
 * `histolab <https://github.com/histolab/histolab>`__
+* `librosa <https://github.com/librosa/librosa>`__
 
 *If you're using Pooch, send us a pull request adding your project to the list.*
 
